@@ -1,6 +1,6 @@
 # The Odin Project
  
-**Title:** Recipe website
+**Title:** Recipes Website
 
 
 **Description:** A basic recipe website
