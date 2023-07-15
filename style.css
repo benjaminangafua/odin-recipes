@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f6f6f6;
+}
+
+.logo img {
+    width: 30%;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.container {
+    padding-inline: 20px;
+}
+
+header {
+    height: max-content;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: #fff;
+    padding-block: 10px;
+    text-transform: uppercase;
+}
+
+ul li,
+.logo {
+    display: inline-flex;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.heroSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    color: #fff;
+}
+
+.hero-section-card {
+    background-color: #fff;
+    color: black;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.hero-section-card h1 {
+    text-transform: uppercase;
+}
+
+.tour {
+    margin-block: 10%;
+    color: gray;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero-section-card button {
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: max-content;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+}
+
+.heroSection div img {
+    height: auto;
+    width: 100%;
+}
+
+
+/* Cards */
+
+.main {
+    padding-inline: 5%;
+}
+
+.main h1 {
+    text-align: center;
+    margin: 5% 0 2% 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 5%;
+}
+
+.card a img {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    width: 100%;
+}
+
+.card {
+    background: #fff;
+    border-radius: 6px;
+}
+
+.txt {
+    padding: 20px;
+}
+
+.txt>div>a {
+    color: #d68a17;
+}
+
+.txt>div:nth-child(1) {
+    margin-bottom: 5%;
+}
+
+.txt>div:nth-last-of-type(odd) {
+    font-weight: bolder;
+}
+
+.txt>div:nth-last-of-type(even) {
+    font-size: medium;
+    padding-bottom: 5px;
+    color: rgb(107, 106, 116);
+}
+
+.customer-request {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.479), rgba(15, 14, 14, 0.705), rgba(0, 0, 0, 0.377)), url('./fotter-retaurant.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: x-large;
+    align-content: center;
+    padding-block: 200px;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.footer-in-touch .logo img {
+    height: 40%;
+    width: 40%;
+}
+
+.footer-in-touch .logo {
+    padding: 0;
+}
+
+.footer-in-touch {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    justify-content: center;
+    align-content: center;
+    background: black;
+    padding-block: 80px;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.footer-bottom {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(200px, 1fr));
+    padding: 20px;
+    background: #c48d3b;
+    justify-content: space-between;
+    align-content: center;
+    gap: 1.5rem;
+}
+
+input {
+    border: none;
+    padding: 7px;
+}
+
+.order {
+    border: none;
+    padding: 7px 20px;
+    color: #d68a17;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.address>*,
+.in-touch-card>div:not(:last-child) {
+    padding-bottom: .5rem;
+}
+
+.address>*:nth-of-type(odd) {
+    font-weight: bolder;
+}
+
+.terms,
+.address>*:nth-child(even) {
+    color: #d68a17;
+}

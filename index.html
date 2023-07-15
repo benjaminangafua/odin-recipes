@@ -4,19 +4,119 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Recipes Site</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <header>
+        <nav class="container">
+            <div class="logo"><img src="./logo.png" alt="Logo"></div>
 
-    <h2>A Basic Odin Recipes</h2>
-    <img src="./recipes/RanchChickenTacos.jpg" alt="Ranch Chicken Tacos">
+            <ul>
+                <li><a href="#dish">Dish</a> </li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li><a href="#menu"> Menu</a></li>
+            </ul>
+        </nav>
+        <div class="heroSection">
+            <div class="hero-section-card">
+                <h1>Our delivery is free!</h1>
+                <h4 class="tour">Get to know our location</h4>
+                <button>View Menu</button>
+            </div>
+            <div><img src="./restuarant.jpg" alt=""></div>
+        </div>
+    </header>
+    <div class="main">
+        <h1>People in Liberia enjoyed</h1>
+        <div class="cards" id="dish">
+            <div class="card">
+                <div class="img">
+                    <a href="./recipes/receipesFile.html"> <img src="./recipes/RanchChickenTacos.jpg" alt="Ranch Chicken Tacos"></a>
+                </div>
+                <div class="txt">
+                    <div class="title"><a href="./recipes/receipesFile.html"> Ranch Chicken Tacos </a></div>
+                    <div class="location">D'Calabash</div>
 
-    <ul>
-        <h5>List of Recipes Available</h5>
-        <li><a href="./recipes/lasagna.html"> Ranch Chicken Tacos</a></li>
-        <li><a href="./recipes/lasagna1.html"> Saigon Noodle Salad</a></li>
-        <li><a href="./recipes/lasagna2.html"> Summer Grilled Shrimp Salad</a></li>
-    </ul>
+                    <div>Monrovia Liberia</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img">
+                    <a href="./recipes/receipesFile2.html"> <img src="./recipes/SummerGrilledShrimpSalad.jpg" alt="Summer Grilled Shrimp Salad"></a>
+                </div>
+                <div class="txt">
+                    <div class="title"><a href="./recipes/receipesFile2.html"> Summer Grilled Shrimp Salad </a></div>
+                    <div class="location">D'Calabash</div>
+
+                    <div>Monrovia Liberia</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <a href="./recipes/receipesFile.html"> <img src="./recipes/RanchChickenTacos.jpg" alt="Ranch Chicken Tacos"></a>
+                </div>
+                <div class="txt">
+                    <div class="title"><a href="./recipes/receipesFile.html"> Ranch Chicken Tacos</a></div>
+                    <div class="location">D'Calabash</div>
+
+                    <div>Monrovia Liberia</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <a href="./recipes/receipesFile1.html"> <img src="./recipes/Saigon-Noodle-Salad.jpg" alt="Saigon Noodle Salad"></a>
+                </div>
+                <div class="txt">
+                    <div class="title"><a href="./recipes/receipesFile1.html"> Saigon Noodle Salad</a></div>
+                    <div class="location">D'Calabash</div>
+
+                    <div>Monrovia Liberia</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="customer-request">
+            <div id="menu">Menu</div>
+            <div>Order</div>
+            <div>Reserve</div>
+        </div>
+        <div class="footer-in-touch">
+            <div class="logo"><img src="./logo.png" alt="Logo"></div>
+            <div class="in-touch-card">
+                <div>Stay in touch</div>
+                <div>
+                    <input type="text" placeholder="johndoe@gmail.com">
+                </div>
+                <div>
+                    <button class="order">Order a dish</button>
+                </div><small>privacy Policy</small> - <small class="terms">Terms</small>
+
+            </div>
+            <div class="address">
+                <div>
+                    Congo Town
+                </div>
+                <div>D'Calabash</div>
+                <div>Monrovia, Liberia</div>
+                <div>Open Monday-Saturday</div>
+                <div>
+
+                    <small> 7:00 A.M - 10:00 P.M</small>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>Order</div>
+            <div>Reserve</div>
+            <div>Menu</div>
+            <div>Call</div>
+            <div>Location</div>
+        </div>
+    </footer>
 </body>
 
 </html>
