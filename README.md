@@ -5,7 +5,7 @@
 
 **Description:** A basic recipe website
 
-**Technology:** HTML
+**Technology:** HTML, CSS
 
 **Author:** Benjamin A. Ngafua
 
