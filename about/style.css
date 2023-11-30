@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+font-family: 'Poppins', sans-serif;    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-header {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.hero-header:last-child {
+    flex-grow: 2;
+    justify-self: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container>* {
+    flex: 1;
+}
+
+ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+ul>li {
+    padding: 10px;
+}
+
+.about-img img {
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 45%;
+    border-bottom-left-radius: 45%;
+}
