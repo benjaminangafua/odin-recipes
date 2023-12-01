@@ -12,13 +12,16 @@
     justify-content: space-between;
 }
 
-.container,
-.pro-container {
-    height: 100dvh;
+img {
+    width: 100%;
+}
+
+.container>* {
+    flex: 1;
 }
 
 .hero-header {
-    padding: 20px;
+    padding: 20px 40px;
     display: flex;
     flex-direction: column;
     height: 90dvh;
@@ -27,34 +30,6 @@
 nav {
     display: flex;
     justify-content: space-between;
-}
-
-h1 {
-    font-size: 3rem;
-    font-weight: 800;
-}
-
-.bio {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-div.button {
-    margin-top: 3rem;
-}
-
-.button button {
-    border: none;
-    background-color: #000;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 6px;
-}
-
-.container>* {
-    flex: 1;
 }
 
 ul {
@@ -66,8 +41,13 @@ ul>li {
     padding: 10px;
 }
 
+.bio h1,
+.profile h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
 .about-img img {
-    width: 100%;
     object-fit: cover;
     object-position: top;
     /* filter: sepia(180%); */
@@ -75,4 +55,95 @@ ul>li {
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
     cursor: pointer;
+}
+
+.bio {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.button {
+    margin-top: 3rem;
+    /* display: flex;
+    justify-content: center; */
+}
+
+button {
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.pro-container {
+    height: 100dvh;
+}
+
+section {
+    padding: 40px;
+    background-color: #eee;
+}
+
+.cards {
+    display: flex;
+    gap: 1em;
+    padding-block: 40px;
+}
+
+.card {
+    flex: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 6px;
+}
+
+.card-img {
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.btns {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 0.25em;
+}
+
+.btn2,
+.btn1 {
+    padding: 4px 40px;
+    border-radius: 10px;
+}
+
+.btn2 {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid black;
+}
+
+.doing {
+    display: flex;
+    padding: 0;
+    background-color: #fff;
+}
+
+.profile {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile p {
+    font-size: larger;
+}
+
+.profile-img img {
+    -webkit-clip-path: polygon(0 0, 79% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 79% 0, 100% 100%, 0% 100%);
+    object-fit: cover;
+    object-position: top;
 }
